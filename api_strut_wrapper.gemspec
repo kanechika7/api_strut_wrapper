@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_dependency("rails",[">= 3.0.0"])
-  s.add_dependency("strut",[">= 0.0.9"])
+  s.add_dependency("strut",":git => 'https://github.com/kuruma-gs/strut.git'")
 
   s.files        = Dir.glob("lib/**/*") + %W(README.rdoc Rakefile)
   s.require_path = 'lib'
