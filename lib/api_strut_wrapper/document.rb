@@ -1,4 +1,6 @@
 # coding: UTF-8
+require 'api_strut_wrapper/model/api'
+require 'api_strut_wrapper/model/data'
 module ApiStrutWrapper
   module Document
     extend ActiveSupport::Concern

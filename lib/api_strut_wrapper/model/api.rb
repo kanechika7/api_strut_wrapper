@@ -1,4 +1,6 @@
 # coding: UTF-8
+require 'api_strut_wrapper/model/mongo_query_parser'
+require 'api_strut_wrapper/model/rails_query_parser'
 module ApiStrutWrapper
   module Model
     module Api
