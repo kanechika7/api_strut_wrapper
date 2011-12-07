@@ -18,13 +18,16 @@
 ## ① Controller 設定
 
 以下を設定（CRUD + copy）
+
     $ vi app/controllers/MODELS_controller.rb
     
     class MODELS_controller < ApplicationController
       api_strut_wrapper MODEL
     end
 
+
 ルーティング（使うものを定義）
+
     $ vi config/routes.rb
     
     resources :units ,only: [:index,:show,:update,:destroy] do
@@ -63,6 +66,7 @@
 ## ③ リクエスト
 
 URL
+
     GET    ./v1/objects.json           # index
     GET    ./v1/objects/:id.json       # show
     POST   ./v1/objects.json           # create
@@ -71,6 +75,7 @@ URL
     POST   ./v1/objects/:id/copy.json  # copy
 
 パラメータ
+
     index、show にアクセスする時以下のパラメータが使用できる
     
     includes: 関連を取得、複数取得する時はカンマ（,）区切り、多段の時は「->(..)」で指定して取って来れる
