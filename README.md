@@ -7,6 +7,10 @@
 - controllerのresponseデータを、Modelで定義したカラムやメソッドに限定できます。
 - requestのURLオプションにincludesを加えると、Railsの関連情報もまとめて取得できます。
 
+依存関係
+---------
+* [strut] https://github.com/kuruma-gs/strut
+
 
 使い方
 ------
