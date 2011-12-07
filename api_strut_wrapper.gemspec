@@ -7,7 +7,7 @@ require "api_strut_wrapper/version"
 Gem::Specification.new do |s|
   s.name        = "api_strut_wrapper"
   s.version     = ApiStrutWrapper::VERSION
-  s.platform    = Gem::Platform::Ruby
+  s.platform    = Gem::Platform::RUBY
   s.authors     = ["kanechika7"]
   s.email       = ["kanechika7@gmail.com"]
   s.homepage    = %q{http://github.com/#{github_username}/#{project_name}}
