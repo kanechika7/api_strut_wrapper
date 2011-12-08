@@ -33,7 +33,7 @@ module ApiStrutWrapper
         define_method :create do
           obj = instance_variable_get("@#{file_name}")
           respond_create(obj,{
-            t_json: Proc.new{ render json: obj.as_json(as: :api) ,status: :created ,location: obj }
+            t_json: Proc.new{ render json: obj.as_json(as: :api) ,status: :created }
           })
         end
 
@@ -42,7 +42,7 @@ module ApiStrutWrapper
           obj = instance_variable_get("@#{file_name}")
           obj.attributes = clazz.find(params[:id]).copy_attributes
           respond_create(obj,{
-            t_json: Proc.new{ render json: obj.as_json(as: :api) ,status: :created ,location: obj }
+            t_json: Proc.new{ render json: obj.as_json(as: :api) ,status: :created }
           })
         end
 
